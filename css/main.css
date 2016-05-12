@@ -122,7 +122,6 @@ header{
 .logo-mark{
   width: 40px;
   height: 40px;
-  /*border: 2px solid #fff;*/
   border: none;
   background-color: rgba(255,255,255,0.2);
 }
@@ -133,25 +132,26 @@ header{
   padding-top: 7px;
 }
 
-.menu{
+#menu{
   height: 100%;
   width: 750px;
   float: right;
+  position: relative;
 }
 
-.menu ul{
-  position: relative;
+#menu ul{
+  position: absolute;
   top: 28px;
 }
 
-.menu li{
+#menu li{
   display: inline-block;
   padding: 0 15px;
   color: #fff;
   font-size: 10pt;
 }
 
-.menu a:hover{
+#menu a:hover{
   color: #2cbc69;
 }
 
@@ -270,25 +270,27 @@ header{
   background-color: #f2f2f1;
   height: auto;
   width: 100%;
+  position: relative;
+  padding: 30px 0;
 }
 
-#testimonials div{
+.quote{
   width: 900px;
   height: auto;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 10px 0;
 }
 
-#testimonials p{
+.quote p{
   text-align: center;
 }
 
-#testimonials h2{
+.quote h3{
   font-size: 12pt;
   text-align: center;
   font-weight: 700;
-  padding-top: 30px;
 }
+
 
 /*Portfolio Styles*/
 .portfolio-text{
@@ -360,16 +362,23 @@ header{
   height: 40px;
   width: 100%;
   margin: 10px auto;
+  padding-left: 10px;
+  font-size: 15px;
   background-color: rgba(255,255,255,0.3);
   border: none;
+  color: #fff;
 }
 
 #contact textarea{
   height: 200px;
   width: 100%;
   margin: 10px auto;
+  padding-left: 10px;
+  font-size: 15px;
+  padding-top: 10px;
   background-color: rgba(255,255,255,0.3);
   border: none;
+  color: #fff;
 }
 
 #contact button{
@@ -391,21 +400,21 @@ header{
   background-color: #2cbc69;
 }
 
-::-webkit-input-placeholder  {
+/*::-webkit-input-placeholder  {
    color: #b8b8b8;
    padding-left: 10px;
    padding-top: 6px;
    font-size: 15px;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
    color: #b8b8b8;
    padding-left: 10px;
    padding-top: 6px;
    font-size: 15px;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-placeholder {
    color: #b8b8b8;
    padding-left: 10px;
    padding-top: 6px;
@@ -417,18 +426,19 @@ header{
    padding-left: 10px;
    padding-top: 6px;
    font-size: 15px;
-}
+}*/
 
 #copyright{
   width: 100%;
   height: 100px;
   background-color: #191f21;
   margin: 0;
-  padding: 0;
+  padding-bottom: 40px;
 }
 
 .copyright-text{
   margin: -19px auto;
+  padding-top: 10px;
 }
 
 .sm-icons{
